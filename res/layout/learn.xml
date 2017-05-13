@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/prev"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="75dp"
+        android:layout_height="78dp"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/prev" />
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/bg2"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/img" />
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/Nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="30dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/klik"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="123dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/s4" />
+
+            <Button
+                android:id="@+id/main"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/exit" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="75dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/next" />
+
+</LinearLayout>
